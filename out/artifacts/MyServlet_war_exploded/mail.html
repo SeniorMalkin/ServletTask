@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" media="screen" href="styleForm.css" >
+</head>
+<body>
+<form class="my_form" action = "MailServlet" method = "POST">
+    <ul>
+        <li>
+            <label>Email:</label> <input type = "text" name = "email">
+        </li>
+        <li>
+            <label >Subject:</label> <input  type = "text" name = "subject" />
+        </li>
+        <li>
+            <label >Text:</label> <input  type = "text" name = "text" />
+        </li>
+        <li>
+            <label>File:</label><input type = "file" name = "file"/>
+        </li>
+        <li>
+            <div>
+            <input  type = "reset" value = "Reset" id = "btn"/>
+            <input  type = "submit" value = "Submit" id = "btn1"/>
+            </div>
+        </li>
+    </ul>
+</form>
+</body>
+</html>

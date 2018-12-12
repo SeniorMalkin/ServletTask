@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>MyServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InfoServlet</servlet-name>
+        <servlet-class>InfoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MailServlet</servlet-name>
+        <servlet-class>mail.MailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/MyServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InfoServlet</servlet-name>
+        <url-pattern>/InfoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MailServlet</servlet-name>
+        <url-pattern>/mail.MailServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
