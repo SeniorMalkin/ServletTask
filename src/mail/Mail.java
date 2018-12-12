@@ -44,7 +44,6 @@ public class Mail {
             message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(emailTo));
-            message.setRecipient(Message.RecipientType.CC, new InternetAddress("m4lckin.d@yandex.ru"));
             message.setSubject(thema);
         } catch (AddressException e) {
             System.err.println(e.getMessage());
